@@ -32,7 +32,7 @@ To skip embeddings entirely (e.g. corporate proxy that blocks Hugging Face Hub),
 
 ## Multi-platform MCPB bundle
 
-`scripts/build-mcpb.sh` builds a per-platform `.mcpb` bundle. The script honours the host platform and the matching `better-sqlite3` + `sqlite-vec` prebuilt binaries. CI (`.github/workflows/release-mcpb.yml`) runs this on a matrix of `ubuntu-latest`, `macos-13` (Intel), `macos-14` (Apple Silicon), and `windows-latest` for every `v*` tag push, then attaches all four bundles to the release. Local cross-compilation is not supported — you can only build a bundle for the platform you're currently on.
+`scripts/build-mcpb.sh` builds a per-platform `.mcpb` bundle. The script honours the host platform and the matching `better-sqlite3` + `sqlite-vec` prebuilt binaries. CI (`.github/workflows/release-mcpb.yml`) runs this on a matrix of `ubuntu-latest`, `macos-15-intel` (Intel), `macos-15` (Apple Silicon), and `windows-latest` for every `v*` tag push, then attaches all four bundles to the release. Local cross-compilation is not supported — you can only build a bundle for the platform you're currently on.
 
 ## Pull Requests
 
